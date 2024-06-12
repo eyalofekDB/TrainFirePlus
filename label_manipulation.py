@@ -2,12 +2,12 @@ import os
 
 
 # change labels
-label_dirs = ['/DATA/TRAIN/TrainFirePlus/TrainFirePlus/datasets/BarrleFire/train/labels',
-              '/DATA/TRAIN/TrainFirePlus/TrainFirePlus/datasets/BarrleFire/val/labels']
+label_dirs = ['/DATA/TRAIN/TrainFirePlus/datasets/BarrelFire/train/labels',
+              '/DATA/TRAIN/TrainFirePlus/datasets/BarrelFire/val/labels']
 
 
-original_tag = '0'
-new_tag = '3'
+original_tag = '3'
+new_tag = '0'
 for directory in label_dirs:
     print(f'process directory {directory}')
     files = os.listdir(directory)

@@ -8,7 +8,6 @@ val:
 test:  # test images (optional)
 
 names:
-  0: none
+  0: barrel
   1: fire
   2: smoke
-  3: barrel
