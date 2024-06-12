@@ -2,17 +2,16 @@ import os
 
 
 # change labels
-label_dirs = ['datasets/fire/train/labels',
-              'datasets/fire/val/labels']
-# label_dirs = ['datasets/Wildfire_Smoke/train/labels',
-#               'datasets/Wildfire_Smoke/valid/labels']
-# label_dirs = ['datasets/VisDrone/VisDrone2019-DET-train/labels',
-#               'datasets/VisDrone/VisDrone2019-DET-val/labels']
+label_dirs = ['/DATA/TRAIN/TrainFirePlus/TrainFirePlus/datasets/BarrleFire/train/labels',
+              '/DATA/TRAIN/TrainFirePlus/TrainFirePlus/datasets/BarrleFire/val/labels']
 
-original_tag = '10'
-new_tag = '1'
+
+original_tag = '0'
+new_tag = '3'
 for directory in label_dirs:
-    for filename in os.listdir(directory):
+    print(f'process directory {directory}')
+    files = os.listdir(directory)
+    for filename in files:
         f = os.path.join(directory, filename)
         # checking if it is a file
         if os.path.isfile(f):
