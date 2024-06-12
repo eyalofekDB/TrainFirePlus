@@ -2,9 +2,9 @@
 #
 path: ../datasets  # dataset root dir
 train: 
-    - combined/train/images  # train images
+    - Combined/Train/images  # train images
 val: 
-     - combined/val/images
+     - Combined/Val/images
 test:  # test images (optional)
 
 names:
